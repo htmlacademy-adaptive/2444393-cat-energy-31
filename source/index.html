@@ -6,6 +6,10 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -13,8 +17,16 @@
 
   <header class="header">
     <nav class="main-navigation">
-      <a class="main-navigation__logo" href="index.html" aria-current="page">
-        <img class="main-navigation__logo-img" src="#" width="202" height="59" alt="Логотип сайта Cat Energy">
+      <a class="main-navigation__logo logo" href="index.html" aria-current="page">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-img-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-img-tablet.svg">
+          <img class="main-navigation__logo-img" src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-desktop.svg">
+          <img class="main-navigation__logo-img" src="images/logo-text-mobile-tablet.svg" width="101" height="18" alt="Товарный знак Cat Energy">
+        </picture>
       </a>
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -32,27 +44,32 @@
       </ul>
     </nav>
   </header>
-
   <main class="main-container">
     <section class="main-hero">
-      <img class="main-hero__main-picture" src="#" width="458" height="352" alt="Упаковка продукции Cat Energy">
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/cat-energy-mainpage-desktop@1x.png 1x, images/cat-energy-mainpage-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/cat-energy-mainpage-tablet@1x.png 1x, images/cat-energy-mainpage-tablet@2x.png 2x">
+        <img class="main-hero__main-picture" src="images/cat-energy-mainpage-mobile@1x.png" srcset="images/cat-energy-mainpage-mobile@2x.png 2x" width="280" height="270" alt="Упаковка продукции Cat Energy">
+      </picture>
       <div class="main-hero__container">
         <h1 class="main-hero__title">Функциональное питание для котов</h1>
         <h2 class="main-hero__slogan">Занялся собой? Займись котом!</h2>
-        <a class="main-hero__button-features button" href="#">Подобрать программу</a>
+        <button class="main-hero__button-features button" type="button">Подобрать программу</button>
       </div>
       <div class="main-hero__container colored-box">
-        <img class="main-hero__opacity-picture" src="#" width="1041" height="694" alt="Изображение облизывающегося кота">
+        <picture>
+          <source media="(min-width: 1440px)" width="720" height="694" type="image/jpeg" srcset="images/homepage-cat-background@1x.jpg 1x, images/homepage-cat-background@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="0" height="0" type="image/jpeg" srcset="#">
+          <img class="main-hero__opacity-picture" src="images/homepage-cat-background-mobile@1x.jpg" srcset="images/homepage-cat-background-mobile@2x.jpg 2x" width="320" height="302" alt="Изображение облизывающегося кота">
+        </picture>
       </div>
     </section>
-
     <section class="main-advantages">
       <div class="main-advantages__wrapper">
         <h3 class="main-advantages__title">Похудение</h3>
         <p class="main-advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <div class="main-advantages__catalog-wrapper">
-          <a class="main-advantages__catalog-link" href="#">Каталог Slim</a>
-          <a class="main-advantages__catalog-link" href="#">
+          <a class="main-advantages__catalog-link" href="#">Каталог Slim
             <img class="main-advantages__catalog-link-arrow" src="#" width="32" height="10" alt="Стрелка вправо">
           </a>
         </div>
@@ -61,8 +78,7 @@
         <h3 class="main-advantages__title">Набор массы</h3>
         <p class="main-advantages__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <div class="main-advantages__catalog-wrapper">
-          <a class="main-advantages__catalog-link" href="#">Каталог Pro</a>
-          <a class="main-advantages__catalog-link" href="#">
+          <a class="main-advantages__catalog-link" href="#">Каталог Pro
             <img class="main-advantages__catalog-link-arrow" src="#" width="32" height="10" alt="Стрелка вправо">
           </a>
         </div>
@@ -122,9 +138,17 @@
         </div>
       </div>
       <div class="main-experience__wrapper-description">
-        <img class="main-experience__picture" src="#" width="560" height="512" alt="Изображение кота Бориса до">
-        <img class="main-experience__button" src="#" width="560" height="512" alt="Ползунок">
-        <img class="main-experience__picture" src="#" width="560" height="512" alt="Изображение кота Бориса после">
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/fat-cat-desktop@1x.jpg 1x, images/fat-cat-desktop@2x.jpg 2x">
+          <img class="main-experience__picture" src="images/fat-cat-mobile@1x.jpg" srcset="images/fat-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Изображение кота Бориса до">
+        </picture>
+        <button class="main-experience__button" type="button">
+          <span class="visually-hidden">Ползунок</span>
+        </button>
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/slim-cat-desktop@1x.jpg 1x, images/slim-cat-desktop@2x.jpg 2x">
+          <img class="main-experience__picture" src="images/slim-cat-mobile@1x.jpg" srcset="images/slim-cat-mobile@2x.jpg 2x" width="280" height="256" alt="Изображение кота Бориса после">
+        </picture>
       </div>
     </section>
 
@@ -142,7 +166,8 @@
 
   <footer class="footer">
     <a class="footer__logo" href="index.html" aria-current="page">
-      <img class="footer__logo-img" src="#" width="202" height="59" alt="Логотип сайта Cat Energy">
+      <img class="footer__logo-img" src="images/logo-text-mobile-tablet.svg" width="128" height="24" alt="Логотип сайта Cat Energy">
+
     </a>
     <ul class="footer__social-list">
       <li class="footer__social-list-item">
@@ -161,7 +186,7 @@
         </a>
       </li>
     </ul>
-    <a class="footer__developer-link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener">
+    <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
       <span class="visually-hidden">Ссылка на сайт разработчика htmlacademy.ru</span>
     </a>
   </footer>
