@@ -1,17 +1,9 @@
-.main-hero {
-
-}
-
-.main-hero__main-picture {
-
-}
-
 .main-hero__container {
   background: rgba(104, 183, 56, 0.85);
 }
 
 .main-hero__title {
-  font-family: "Oswald";
+  font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -21,19 +13,11 @@
 }
 
 .main-hero__slogan {
-  font-family: "Oswald";
+  font-family: $secondary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.main-hero__button-features {
-
-}
-
-.main-hero__opacity-picture {
-
 }

@@ -1,33 +1,21 @@
 .main-experience {
- background-color: #EAEAEA;
+  background-color: #EAEAEA;
 }
 
 .main-experience__title {
-  font-family: "Oswald";
+  font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
   text-align: lefft;
 }
 
-.main-experience__wrapper-description {
-
-}
-
 .main-experience__description {
   color: #444444;
 }
 
-.main-experience__wrapper-clarifying {
-
-}
-
-.main-experience__clarifying {
-
-}
-
 .main-experience__clarifying-title {
-  font-family: "Oswald";
+  font-family: $secondary-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -38,22 +26,14 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color:#444444;
+  color: #444444;
 }
 
 .main-experience__clarifying-benefit {
-  font-family: "Oswald";
+  font-family: $secondary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.main-experience__picture {
-
-}
-
-.main-experience__button {
-
 }

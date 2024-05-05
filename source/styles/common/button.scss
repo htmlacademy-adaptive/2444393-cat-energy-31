@@ -1,7 +1,24 @@
 .button {
+  @include project-button;
+}
 
+.button--program {
+  padding: 10px 64px;
+}
+
+.button--order {
+  padding: 10px 109px;
 }
 
 .button--more-item {
-
+  background-color: #f2f2f2;
+  color: #444444;
+  padding: 10px 95px 10px 94px;
 }
+
+.button--subscribe {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px 82px;
+}
+

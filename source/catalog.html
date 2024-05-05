@@ -28,8 +28,10 @@
         </picture>
       </a>
       <button class="main-navigation__toggle" type="button" aria-label="Main nav">
-        <img src="#" width="10" height="10" alt="Открыть меню">
-        <img src="#" width="10" height="10" alt="Закрыть меню">
+        Открыть меню
+      </button>
+      <button class="main-navigation__toggle--close" type="button" aria-label="Main nav">
+        Закрыть меню
       </button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item main-navigation__item--current">
@@ -73,7 +75,7 @@
               <td class="catalog-main__card-value">700 ₽</td>
             </tr>
           </table>
-          <a class="catalog-main__card-order-link button" href="#">Заказать</a>
+          <a class="catalog-main__card-order-link button button--order" href="#">Заказать</a>
         </li>
         <li class="catalog-main__card-item">
           <a class="catalog-main__card-description-link" href="#">
@@ -100,7 +102,7 @@
               <td class="catalog-main__card-value">1000 ₽</td>
             </tr>
           </table>
-          <a class="catalog-main__card-link button" href="#">Заказать</a>
+          <a class="catalog-main__card-link button button--order" href="#">Заказать</a>
         </li>
         <li class="catalog-main__card-item">
           <picture>
@@ -125,7 +127,7 @@
               <td class="catalog-main__card-value">700 ₽</td>
             </tr>
           </table>
-          <a class="catalog-main__card-link button" href="#">Заказать</a>
+          <a class="catalog-main__card-link button button--order" href="#">Заказать</a>
         </li>
         <li class="catalog-main__card-item">
           <a class="catalog-main__card-description-link" href="#">
@@ -152,7 +154,7 @@
               <td class="catalog-main__card-value">1000 ₽</td>
             </tr>
           </table>
-          <a class="catalog-main__card-link button" href="#">Заказать</a>
+          <a class="catalog-main__card-link button button--order" href="#">Заказать</a>
         </li>
         <li class="catalog-main__card-item">
           <a class="catalog-main__card-description-link" href="#">
@@ -179,7 +181,7 @@
               <td class="catalog-main__card-value">400 ₽</td>
             </tr>
           </table>
-          <a class="catalog-main__card-link button" href="#">Заказать</a>
+          <a class="catalog-main__card-link button button--order" href="#">Заказать</a>
         </li>
         <li class="catalog-main__card-item">
           <a class="catalog-main__card-description-link" href="#">
@@ -206,7 +208,7 @@
               <td class="catalog-main__card-value">700 ₽</td>
             </tr>
           </table>
-          <a class="catalog-main__card-link button" href="#">Заказать</a>
+          <a class="catalog-main__card-link button button--order" href="#">Заказать</a>
         </li>
         <li class="catalog-main__card-item">
           <a class="catalog-main__card-description-link" href="#">
@@ -233,7 +235,7 @@
               <td class="catalog-main__card-value">500 ₽</td>
             </tr>
           </table>
-          <a class="catalog-main__card-link button" href="#">Заказать</a>
+          <a class="catalog-main__card-link button button--order" href="#">Заказать</a>
         </li>
         <li class="catalog-main__card-item catalog-main__card-item--more-item">
           <h2 class="catalog-main__card-title catalog-main__card-title--more-items">Показать еще 100500 товаров</h2>
@@ -250,25 +252,25 @@
           <h2 class="additional-products__description">Сахарозаменитель</h2>
           <p class="additional-products__package">1 упаковка (100 г)</p>
           <p class="additional-products__value">200 ₽</p>
-          <a class="additional-products__link button" href="#">Заказать</a>
+          <a class="additional-products__link button button--order" href="#">Заказать</a>
         </li>
         <li class="additional-products__card-item">
           <h2 class="additional-products__description">Питьевая вода</h2>
           <p class="additional-products__package">5 литров</p>
           <p class="additional-products__value">50 ₽</p>
-          <a class="additional-products__link button" href="#">Заказать</a>
+          <a class="additional-products__link button button--order" href="#">Заказать</a>
         </li>
         <li class="additional-products__card-item">
           <h2 class="additional-products__description">Молоко</h2>
           <p class="additional-products__package">1 литр</p>
           <p class="additional-products__value">100 ₽</p>
-          <a class="additional-products__link button" href="#">Заказать</a>
+          <a class="additional-products__link button button--order" href="#">Заказать</a>
         </li>
         <li class="additional-products__card-item">
           <h2 class="additional-products__description">Витамины</h2>
           <p class="additional-products__package">1 упаковка (30 г)</p>
           <p class="additional-products__value">300 ₽</p>
-          <a class="additional-products__link button" href="#">Заказать</a>
+          <a class="additional-products__link button button--order" href="#">Заказать</a>
         </li>
       </ul>
       <div class="additional-products__gift-wrapper">
@@ -293,16 +295,16 @@
       <form class="subscribe__newsletter-form" action="https://echo.htmlacademy.ru/courses" method="post">
         <label class="visually-hidden" for="user-email">Ваш E-mail</label>
         <input class="subscribe__newsletter-form-mail" type="email" id="user-email" name="Ваш e-mail" placeholder="kuklachev@gmail.com" required>
-        <button class="subscribe__button" type="submit">Подписаться</button>
+        <button class="button button--subscribe" type="submit">Подписаться</button>
       </form>
     </section>
     <section class="contacts contacts--catalog">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
         <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
-        <div class="contacts__adress-wrapper">
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts__adress">Санкт-Петербург</p>
+        <div class="contacts__address-wrapper">
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__address">Санкт-Петербург</p>
         </div>
       </div>
       <picture>
@@ -339,6 +341,6 @@
       <span class="visually-hidden">Ссылка на сайт разработчика htmlacademy.ru</span>
     </a>
   </footer>
-/body>
+</body>
 
 </html>
