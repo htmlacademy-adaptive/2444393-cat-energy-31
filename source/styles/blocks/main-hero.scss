@@ -1,5 +1,32 @@
-.main-hero__container {
-  background: rgba(104, 183, 56, 0.85);
+.main-hero__main-picture {
+  z-index: 3;
+  position: absolute;
+  top: 167px;
+  left: 20px;
+}
+
+.main-hero__wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background: rgba(104, 183, 56, 0.85);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+}
+
+.main-hero__opacity-picture {
+  z-index: -1;
+  object-fit: cover;
 }
 
 .main-hero__title {
@@ -9,7 +36,10 @@
   line-height: 36px;
   text-align: center;
   color: #ffffff;
-
+  z-index: 2;
+  margin: 0;
+  position: absolute;
+  bottom: 203px;
 }
 
 .main-hero__slogan {
@@ -20,4 +50,12 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  position: absolute;
+  bottom: 164px;
+  z-index: 2;
+  margin: 0;
+}
+
+.main-hero__button-features {
+  margin-top: 138px;
 }

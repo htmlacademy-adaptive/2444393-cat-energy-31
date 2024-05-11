@@ -1,0 +1,17 @@
+.main-navigation-menu__list {
+  list-style: none;
+}
+
+.main-navigation-menu__item {
+  text-align: center;
+}
+
+.main-navigation-menu__link {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}

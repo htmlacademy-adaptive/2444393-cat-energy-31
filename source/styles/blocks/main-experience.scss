@@ -1,5 +1,5 @@
 .main-experience {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .main-experience__title {
@@ -37,3 +37,73 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.main-experience__wrapper-description {
+  display: flex;
+}
+
+.main-experience__button {
+  width: 4px;
+  height: 256;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  position: absolute;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+  left: 50%;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+  }
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #666666;
+    position: absolute;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    border: 2px solid #68b738;
+  }
+
+  &:active::before {
+    border: 2px solid #5eaa2f;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#curtain");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: #68b738;
+  }
+
+  &:active::after {
+    background-color: #5eaa2f;
+  }
+}
+
