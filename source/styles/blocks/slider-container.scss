@@ -1,0 +1,29 @@
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 256px;
+}
+
+.slider-container__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-container__image--before {
+  z-index: 3;
+}
+
+.slider-container__image--after {
+  right: 0;
+  left: auto;
+  z-index: 1;
+  width: 100%;
+}
+
+.slider-container__picture {
+  vertical-align: bottom;
+}

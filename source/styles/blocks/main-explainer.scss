@@ -1,9 +1,16 @@
+.main-explainer {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
 .main-explainer__title {
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
   text-align: left;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .main-explainer__list {
@@ -59,4 +66,8 @@
     background-image: url("../../icons/stack.svg#icon-explainer-scales");
     background-size: 26px 31px;
   }
+}
+
+.main-explainer__description {
+  margin: 0;
 }

@@ -1,5 +1,14 @@
 .footer {
+  width: 320px;
   background-color: #f2f2f2;
+  padding: 40px 20px;
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .footer__logo-img {
@@ -17,40 +26,67 @@
 
 .footer__social-list {
   list-style-type: none;
-  padding: 0;
+  padding: 19px 0;
   margin: 0;
   display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  justify-content: center;
+  gap: 24px;
 }
 
 .social-button {
+  display: block;
   width: 28px;
-  height: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 24px;
+  background-color: #666666;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 40px;
-    mask-position: center center;
-    mask-repeat: no-repeat;
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.vkontakte::before {
+.social-button--vkontakte {
   mask-image: url("../../icons/stack.svg#icon-vkontakte");
-  fill: black;
 }
 
+.social-button--youtube {
+  mask-image: url("../../icons/stack.svg#icon-youtube");
+}
 
+.social-button--telegram {
+  mask-image: url("../../icons/stack.svg#icon-telegram");
+}
 
 .footer__developer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 40px;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
   color: #444444;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__developer-link-img {
+  display: block;
+  fill: #444444;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 

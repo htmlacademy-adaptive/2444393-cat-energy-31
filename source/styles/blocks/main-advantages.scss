@@ -1,6 +1,12 @@
+.main-advantages {
+  padding: 0 20px;
+}
+
+
 .main-advantages__wrapper {
   background: #f2f2f2;
   padding: 24px 33px 18px 20px;
+  margin-bottom: 21px;
 }
 
 .main-advantages__items {
@@ -63,13 +69,13 @@
 .main-advantages__description {
   margin: 0;
   color: #444444;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .main-advantages__catalog-wrapper {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 19px;
 }
 
 .main-advantages__catalog-link {
@@ -93,8 +99,8 @@
     background-color: #000000;
     display: inline-block;
     width: 24px;
-    height: 12px;
-    margin-left: 15px;
+    height: 13px;
+    margin-left: 13px;
   }
 
   &:hover::after,
