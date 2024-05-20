@@ -1,5 +1,6 @@
 .main-experience {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
+  padding: 25px 0 40px;
 }
 
 .main-experience__title {
@@ -7,11 +8,30 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  text-align: lefft;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .main-experience__description {
   color: #444444;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.main-experience__wrapper-clarifying {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+
+.main-experience__clarifying {
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+  position: relative;
 }
 
 .main-experience__clarifying-title {
@@ -20,13 +40,24 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
+  margin: 0;
+  padding-top: 14px;
+  text-transform: uppercase;
 }
 
 .main-experience__clarifying-description {
   font-size: 12px;
   line-height: 12px;
-  text-align: center;
   color: #444444;
+  margin: 0;
+  position: absolute;
+  background-color: #eaeaea;
+  top: 46px;
+  left: 22px;
+  display: block;
+  width: 77px;
+  height: 24px;
+  text-align: center;
 }
 
 .main-experience__clarifying-benefit {
@@ -36,4 +67,79 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
+
+.main-experience__slider-description {
+  max-width: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-experience__slider-button {
+  width: 4px;
+  height: 256;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  position: absolute;
+  padding: 0;
+  cursor: pointer;
+  top: 0;
+  left: 138px;
+  z-index: 4;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+  }
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #666666;
+    position: absolute;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    border: 2px solid #68b738;
+  }
+
+  &:active::before {
+    border: 2px solid #5eaa2f;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#curtain");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: #68b738;
+  }
+
+  &:active::after {
+    background-color: #5eaa2f;
+  }
+}
+
