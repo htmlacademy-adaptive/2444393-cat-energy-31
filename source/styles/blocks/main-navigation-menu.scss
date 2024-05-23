@@ -26,16 +26,16 @@
   padding: 22px 0 24px;
 }
 
-@media (width >= 768px) {
+@media (width >= $tablet-width) {
   .main-navigation-menu {
-    position: static;
+    min-width: 436px;
+    margin-left: auto;
   }
 
   .main-navigation-menu__list {
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
-    width: 436px;
   }
 
   .main-navigation-menu__item {
@@ -60,9 +60,8 @@
   }
 }
 
-@media (width >= 1330px) {
+@media (width >= $desktop-width) {
   .main-navigation-menu {
-    position: static;
     background-color: transparent;
   }
 

@@ -1,6 +1,23 @@
 .main-experience {
   background-color: #eaeaea;
   padding: 25px 0 40px;
+
+  @media (width >= $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 101px;
+    background-image: linear-gradient(to bottom, #ffffff 619px, #eaeaea 462px);
+  }
+
+  @media (width >= $tablet-width) {
+    padding-bottom: 75px;
+  }
+}
+
+.main-experience__wrapper {
+  @media (width >= $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .main-experience__title {
@@ -11,12 +28,42 @@
   text-align: left;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (width >= $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .main-experience__description {
   color: #444444;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (width >= $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (width >= $desktop-width) {
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+  }
+}
+
+.main-experience__clarifying-benefit-wrapper {
+  @media (width >= $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 104px;
+  }
+
+  @media (width >= $desktop-width) {
+    grid-row: 3 / 3;
+    grid-column: 1 / 1;
+  }
 }
 
 .main-experience__wrapper-clarifying {
@@ -24,6 +71,11 @@
   gap: 32px;
   margin-bottom: 34px;
   justify-content: center;
+
+  @media (width >= $tablet-width) {
+    margin-bottom: 0;
+    gap: 43px;
+  }
 }
 
 .main-experience__clarifying {
@@ -32,6 +84,11 @@
   border: 1px solid #cdcdcd;
   border-radius: 2px;
   position: relative;
+
+  @media (width >= $tablet-width) {
+    width: 162px;
+    height: 72px;
+  }
 }
 
 .main-experience__clarifying-title {
@@ -43,6 +100,12 @@
   margin: 0;
   padding-top: 14px;
   text-transform: uppercase;
+
+  @media (width >= $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 15px;
+  }
 }
 
 .main-experience__clarifying-description {
@@ -53,11 +116,22 @@
   position: absolute;
   background-color: #eaeaea;
   top: 46px;
-  left: 22px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0 7px;
   display: block;
-  width: 77px;
   height: 24px;
   text-align: center;
+
+  @media (width >= $tablet-width) {
+    background-color: #ffffff;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    top: 62px;
+    padding: 0 9px;
+    text-wrap: nowrap;
+  }
 }
 
 .main-experience__clarifying-benefit {
@@ -69,17 +143,37 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (width >= $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-left: auto;
+    text-align: right;
+    width: 174px;
+  }
 }
 
 .main-experience__slider-description {
   max-width: 280px;
   margin: 0 auto;
   position: relative;
+
+  @media (width >= $tablet-width) {
+    max-width: 560px;
+    height: 512px;
+  }
+
+  @media (width >= $desktop-width) {
+    grid-row: 1 / 4;
+    grid-column: 2 / 2;
+    margin: 0;
+  }
 }
 
 .main-experience__slider-button {
   width: 4px;
-  height: 256;
+  height: 256px;
   background-color: #666666;
   border: none;
   border-radius: 2px;
@@ -141,5 +235,10 @@
   &:active::after {
     background-color: #5eaa2f;
   }
-}
 
+  @media (width >= $tablet-width) {
+    height: 512px;
+    top: 0;
+    left: 278px;
+  }
+}

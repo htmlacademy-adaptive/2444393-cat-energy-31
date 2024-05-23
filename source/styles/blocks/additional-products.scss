@@ -6,6 +6,13 @@
   text-align: left;
 }
 
+.additional-products__wrapper {
+  @media (width >= $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .additional-products__card-list {
   list-style: none;
   margin: 0;
@@ -15,6 +22,11 @@
 .additional-products__card-item {
   padding-bottom: 19px;
   border-bottom: 1px solid #c9c9c9;
+
+  @media (width >= $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .additional-products__description {
@@ -48,6 +60,17 @@
   background-repeat: no-repeat;
   margin-top: 35px;
   padding: 59px 61px 43px 58px;
+
+  @media (width >= $tablet-width) {
+    min-height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/cat-backpack-tablet@1x.jpg") 1x, url("../../images/cat-backpack-tablet@2x.jpg") 2x);
+  }
+
+  @media (width >= $desktop-width) {
+    min-height: 288px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/cat-backpack-desktop@1x.jpg") 1x, url("../../images/cat-backpack-desktop@2x.jpg") 2x);
+    margin-top: 0;
+  }
 }
 
 .additional-products__gift-description {
@@ -71,19 +94,5 @@
     background-color: #ffffff;
     align-self: center;
     margin-bottom: 48px;
-  }
-}
-
-@media (width >= 768px) {
-  .additional-products__gift-wrapper {
-    min-height: 200px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/cat-backpack-tablet@1x.jpg") 1x, url("../../images/cat-backpack-tablet@2x.jpg") 2x);
-  }
-}
-
-@media (width >= 1440px) {
-  .additional-products__gift-wrapper {
-    min-height: 288px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/cat-backpack-desktop@1x.jpg") 1x, url("../../images/cat-backpack-desktop@2x.jpg") 2x);
   }
 }

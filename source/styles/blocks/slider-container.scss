@@ -2,6 +2,10 @@
   position: relative;
   overflow: hidden;
   min-height: 256px;
+
+  @media (width >= $tablet-width) {
+    min-height: 512px;
+  }
 }
 
 .slider-container__image {
@@ -12,6 +16,10 @@
   height: 100%;
   overflow: hidden;
   background-color: #eaeaea;
+
+  @media (width >= $tablet-width) {
+    background-image: linear-gradient(to bottom, #ffffff 151px, #eaeaea 1px);
+  }
 }
 
 .slider-container__image--before {

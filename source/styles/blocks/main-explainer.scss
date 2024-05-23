@@ -1,5 +1,11 @@
 .main-explainer {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
+
+  @media (width >= $tablet-width) {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 6px;
+    margin-bottom: 0;
+  }
 }
 
 .main-explainer__title {
@@ -10,6 +16,12 @@
   text-align: left;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (width >= $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .main-explainer__list {
@@ -20,6 +32,18 @@
   margin: 0;
   padding: 0;
   color: #444444;
+
+  @media (width >= $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 60px;
+    counter-reset: listCounter;
+  }
+
+  @media (width >= $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .main-explainer__item {
@@ -36,6 +60,35 @@
     flex-shrink: 0;
     display: block;
     background-repeat: no-repeat;
+  }
+
+  @media (width >= $tablet-width) {
+    flex-direction: column;
+    align-items: start;
+    gap: 31px;
+    position: relative;
+    min-height: 280px;
+
+    &::before {
+      content: "";
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: counter(listCounter);
+      counter-increment: listCounter;
+      font-family: $secondary-font;
+      font-size: 280px;
+      font-weight: 400;
+      line-height: 280px;
+      text-align: center;
+      color: #f2f2f2;
+      position: absolute;
+      top: -40px;
+      left: 118px;
+      z-index: -1;
+    }
   }
 }
 
@@ -69,4 +122,10 @@
 
 .main-explainer__description {
   margin: 0;
+
+  @media (width >= $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+  }
 }

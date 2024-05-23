@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 13px;
   padding-bottom: 15px;
 }
 
@@ -30,7 +29,7 @@
   vertical-align: bottom;
 }
 
-@media (width >= 768px) {
+@media (width >= $tablet-width) {
   .main-navigation {
     display: block;
     padding: 0;
@@ -41,7 +40,7 @@
   }
 }
 
-@media (width >= 1330px) {
+@media (width >= $desktop-width) {
   .main-navigation__logo-text {
     margin-left: 14px;
   }
