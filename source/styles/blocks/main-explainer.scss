@@ -6,6 +6,12 @@
     padding-bottom: 6px;
     margin-bottom: 0;
   }
+
+  @media (width >= $desktop-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 31px;
+  }
 }
 
 .main-explainer__title {
@@ -43,6 +49,7 @@
   @media (width >= $desktop-width) {
     display: flex;
     flex-direction: row;
+    gap: 82px;
   }
 }
 

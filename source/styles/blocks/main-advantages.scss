@@ -2,6 +2,10 @@
   @media (width >= $tablet-width) {
     margin-bottom: 45px;
   }
+
+  @media (width >= $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .main-advantages__main-wrapper {
@@ -28,6 +32,7 @@
   @media (width >= $desktop-width) {
     max-width: 570px;
     margin-bottom: 0;
+    padding: 47px 61px 59px 52px;
   }
 }
 
@@ -60,6 +65,28 @@
     content: "";
     position: absolute;
   }
+
+  @media (width >= $tablet-width) {
+    position: absolute;
+    right: 0;
+    top: 15px;
+
+    &::after {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media (width >= $desktop-width) {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &::after {
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
 
 .main-advantages__image--weightloss {
@@ -70,6 +97,25 @@
     top: -3px;
     left: 7px;
   }
+
+  @media (width >= $tablet-width) {
+    &::before {
+      width: 140px;
+      height: 194px;
+      background-image: url("../../icons/stack.svg#cat-weightloss-tablet");
+      top: -11px;
+      left: 30px;
+    }
+  }
+
+  @media (width >= $desktop-width) {
+    &::before {
+      width: 70px;
+      height: 97px;
+      top: -6px;
+      left: 15px;
+    }
+  }
 }
 
 .main-advantages__image--weightgain {
@@ -79,6 +125,25 @@
     background-image: url("../../icons/stack.svg#cat-weightgain");
     top: 11px;
     left: -8px;
+  }
+
+  @media (width >= $tablet-width) {
+    &::before {
+      width: 268px;
+      height: 112px;
+      background-image: url("../../icons/stack.svg#cat-weightgain-tablet");
+      top: 44px;
+      left: -34px;
+    }
+  }
+
+  @media (width >= $desktop-width) {
+    &::before {
+      width: 134px;
+      height: 56px;
+      top: 20px;
+      left: -19px;
+    }
   }
 }
 
@@ -91,6 +156,17 @@
   text-transform: uppercase;
   margin: 0;
   margin-left: 20px;
+
+  @media (width >= $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (width >= $desktop-width) {
+    margin: 30px 0 73px 162px;
+  }
 }
 
 .main-advantages__description {
@@ -98,6 +174,22 @@
   color: #444444;
   padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (width >= $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: #444444;
+    padding: 0;
+    border-bottom: none;
+    padding-right: 250px;
+    margin-bottom: 52px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-right: 0;
+    margin-bottom: 27px;
+  }
 }
 
 .main-advantages__catalog-wrapper {
@@ -141,65 +233,21 @@
     height: 12px;
     mask-position: right 0 top 0;
   }
-}
 
-@media (width >= $tablet-width) {
-  .main-advantages__title {
-    font-size: 36px;
-    line-height: 36px;
-    margin: 0;
-    margin-bottom: 24px;
-  }
-
-  .main-advantages__image {
-    position: absolute;
-    right: 0;
-    top: 15px;
-
-    &::after {
-      width: 200px;
-      height: 200px;
-    }
-  }
-
-  .main-advantages__image--weightloss {
-    &::before {
-      width: 140px;
-      height: 194px;
-      background-image: url("../../icons/stack.svg#cat-weightloss-tablet");
-      top: -11px;
-      left: 30px;
-    }
-  }
-
-  .main-advantages__image--weightgain {
-    &::before {
-      width: 268px;
-      height: 112px;
-      background-image: url("../../icons/stack.svg#cat-weightgain-tablet");
-      top: 44px;
-      left: -34px;
-    }
-  }
-
-  .main-advantages__description {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0;
-    color: #444444;
-    padding: 0;
-    border-bottom: none;
-    padding-right: 250px;
-    margin-bottom: 52px;
-  }
-
-  .main-advantages__catalog-link {
+  @media (width >= $tablet-width) {
     font-size: 20px;
     line-height: 30px;
 
     &::after {
-      margin-left: 21px;
-      mask-position: right 8px top -2px;
+      margin-left: 22px;
+      margin-bottom: 3px;
+      mask-position: right 8px top 0;
+    }
+  }
+
+  @media (width >= $desktop-width) {
+    &::after {
+      margin-bottom: 2px;
     }
   }
 }

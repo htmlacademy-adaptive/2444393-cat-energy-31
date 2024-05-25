@@ -8,8 +8,9 @@
     background-image: linear-gradient(to bottom, #ffffff 619px, #eaeaea 462px);
   }
 
-  @media (width >= $tablet-width) {
+  @media (width >= $desktop-width) {
     padding-bottom: 75px;
+    padding-top: 0;
   }
 }
 
