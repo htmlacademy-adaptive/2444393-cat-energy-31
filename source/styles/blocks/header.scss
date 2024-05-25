@@ -11,9 +11,12 @@
 }
 
 .header-wrapper {
+  position: relative;
+
   @media (width >= $tablet-width) {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   @media (width >= $desktop-width) {
@@ -24,5 +27,42 @@
 @media (width >= $desktop-width) {
   .header--catalog {
     position: static;
+  }
+}
+
+.header__logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  @media (width >= $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.header__logo-img {
+  vertical-align: bottom;
+}
+
+.header__logo-text {
+  margin-left: 56px;
+  vertical-align: bottom;
+
+  @media (width >= $tablet-width) {
+    margin-left: 13px;
+  }
+
+  @media (width >= $desktop-width) {
+    margin-left: 14px;
   }
 }
