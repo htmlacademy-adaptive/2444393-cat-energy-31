@@ -9,19 +9,26 @@
 
 .button-order {
   @include project-button;
-  padding: 10px 109px;
+  padding: 10px;
 }
 
 .button-more-item {
   @include project-button;
   background-color: #f2f2f2;
   color: #444444;
-  padding: 10px 95px 10px 94px;
+  padding: 10px;
+
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+    color: #444444;
+  }
 }
 
 .button-subscribe {
   @include project-button;
   font-size: 20px;
   line-height: 26px;
-  padding: 15px 82px;
+  padding: 15px;
+  cursor: pointer;
 }

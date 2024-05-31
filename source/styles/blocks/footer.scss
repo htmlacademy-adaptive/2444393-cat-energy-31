@@ -1,6 +1,14 @@
 .footer {
   background-color: #f2f2f2;
-  padding: 58px 0;
+  padding: 41px 0 40px;
+
+  @media (width >= $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding: 69px 0 66px;
+  }
 }
 
 .footer-wrapper {
@@ -63,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0 40px;
+  padding-top: 20px;
   font-size: 16px;
   line-height: 20px;
   text-align: left;

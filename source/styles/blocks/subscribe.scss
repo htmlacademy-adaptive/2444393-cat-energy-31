@@ -1,9 +1,76 @@
+.subscribe {
+  margin-bottom: 40px;
+
+  @media (width >= $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (width >= $desktop-width) {
+    margin-bottom: 103px;
+  }
+}
+
+.subscribe__title-wrapper {
+  display: flex;
+  gap: 40px;
+
+  &::after {
+    content: "";
+    height: 12px;
+    width: 100%;
+    border-bottom: 2px solid #68b738;
+  }
+
+  @media (width >= $tablet-width) {
+    &::before {
+      content: "";
+      border-bottom: 2px solid #68b738;
+      height: 16px;
+      width: 31px;
+    }
+
+    &::after {
+      content: "";
+      height: 16px;
+      width: 10px;
+      flex-grow: 1;
+    }
+  }
+
+  @media (width >= $desktop-width) {
+    &::before {
+      height: 20px;
+      width: calc(50% - 650px);
+    }
+
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
 .subscribe__title {
   font-family: $secondary-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  margin: 0;
+  margin-bottom: 32px;
+  padding-left: 20px;
+
+  @media (width >= $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 66px;
+    padding-left: 0;
+  }
+
+  @media (width >= $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+  }
 }
 
 .subscribe__description {
@@ -12,6 +79,27 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 23px;
+
+  @media (width >= $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0 38px;
+    margin-bottom: 24px;
+  }
+}
+
+.subscribe__newsletter-form {
+  @media (width >= $tablet-width) {
+    padding: 0 38px;
+    display: flex;
+    height: 56px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding: 0 234px;
+  }
 }
 
 .subscribe__newsletter-form-mail {
@@ -21,4 +109,26 @@
   line-height: 30px;
   color: #444444;
   text-transform: uppercase;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 15px;
+
+  @media (width >= $tablet-width) {
+    margin-bottom: 0;
+    min-width: 376px;
+
+    &:focus-visible {
+      border: 2px solid #444444;
+    }
+
+    &:user-invalid {
+      border: 2px solid #ff8282;
+    }
+  }
+
+  @media (width >= $desktop-width) {
+    margin-bottom: 0;
+    min-width: 496px;
+  }
 }

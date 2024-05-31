@@ -20,6 +20,10 @@
   @media (width >= $tablet-width) {
     background-image: linear-gradient(to bottom, #ffffff 151px, #eaeaea 1px);
   }
+
+  @media (width >= $desktop-width) {
+    background-image: linear-gradient(to bottom, #ffffff 136px, #eaeaea 1px);
+  }
 }
 
 .slider-container__image--before {
