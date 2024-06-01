@@ -4,12 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Купите лучшее питание для вашего кота! Широкий ассортимент кормов, витамины и лакомства для кошек всех пород и возрастов. Быстрая доставка, качественные продукты и выгодные цены. Заботьтесь о здоровье и благополучии вашего питомца вместе с нами!">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/source/images/cat-energy-mainpage-desktop@2x.webp" as="image" media="(min-width: 1440px)" type="image/webp">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="script" href="./scripts/index.js" media="(max-width: 767px)" type="text/javascript">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -53,9 +58,12 @@
         <p class="main-hero__slogan">Занялся собой? Займись котом!</p>
         <div class="main-hero__picture-wrapper">
           <picture>
+            <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/cat-energy-mainpage-desktop@1x.webp 1x, images/cat-energy-mainpage-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/cat-energy-mainpage-tablet@1x.webp 1x, images/cat-energy-mainpage-tablet@2x.webp 2x">
+            <source width="280" height="270" type="image/webp" srcset="images/cat-energy-mainpage-mobile@1x.webp 1x, images/cat-energy-mainpage-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/cat-energy-mainpage-desktop@1x.png 1x, images/cat-energy-mainpage-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/cat-energy-mainpage-tablet@1x.png 1x, images/cat-energy-mainpage-tablet@2x.png 2x">
-            <img class="main-hero__main-picture" src="images/cat-energy-mainpage-mobile@1x.png" srcset="images/cat-energy-mainpage-mobile@2x.png 2x" width="280" height="270" alt="Упаковка продукции Cat Energy">
+            <img class="main-hero__main-picture" loading="eager" src="images/cat-energy-mainpage-mobile@1x.png" srcset="images/cat-energy-mainpage-mobile@2x.png 2x" width="280" height="270" alt="Упаковка продукции Cat Energy">
           </picture>
         </div>
         <a class="main-hero__button-features button-program" href="#">Подобрать программу</a>
@@ -144,15 +152,19 @@
 
             <div class="slider-container__image slider-container__image--before">
               <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/fat-cat-desktop@1x.webp 1x, images/fat-cat-desktop@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/fat-cat-mobile@1x.webp 1x, images/fat-cat-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-desktop@1x.png 1x, images/fat-cat-desktop@2x.png 2x">
-                <img class="slider-container__picture" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота Бориса до">
+                <img class="slider-container__picture" loading="lazy" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота Бориса до">
               </picture>
             </div>
 
             <div class="slider-container__image slider-container__image--after">
               <picture>
+                <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slim-cat-desktop@1x.webp 1x, images/slim-cat-desktop@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/slim-cat-mobile@1x.webp 1x, images/slim-cat-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-desktop@1x.png 1x, images/slim-cat-desktop@2x.png 2x">
-                <img class="slider-container__picture" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота Бориса после">
+                <img class="slider-container__picture" loading="lazy" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота Бориса после">
               </picture>
             </div>
 

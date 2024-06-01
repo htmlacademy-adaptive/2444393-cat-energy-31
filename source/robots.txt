@@ -1,0 +1,7 @@
+﻿User-agent: Googlebot
+Disallow: /site
+Disallow: /admin
+Disallow: /users
+Disallow: */templates
+Allow: *.css
+Allow: *.js
