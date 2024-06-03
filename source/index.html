@@ -19,7 +19,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="container header-wrapper">
       <a class="header__logo" href="index.html" aria-current="page">
         <picture>
@@ -52,7 +52,7 @@
   </header>
 
   <main class="main-container">
-    <section class="main-hero">
+    <section class="main-hero" data-test="hero">
       <div class="container main-hero__wrapper">
         <h1 class="main-hero__title">Функциональное<br> питание для котов</h1>
         <p class="main-hero__slogan">Занялся собой? Займись котом!</p>
@@ -70,7 +70,7 @@
       </div>
     </section>
 
-    <section class="main-advantages">
+    <section class="main-advantages" data-test="programs">
       <div class="container main-advantages__main-wrapper">
         <div class="main-advantages__wrapper">
           <div class="main-advantages__items">
@@ -99,7 +99,7 @@
       </div>
     </section>
 
-    <section class="main-explainer">
+    <section class="main-explainer" data-test="features">
       <div class="container">
         <h2 class="main-explainer__title">Как это работает</h2>
         <ol class="main-explainer__list">
@@ -128,14 +128,14 @@
 
     </section>
 
-    <section class="main-experience">
+    <section class="main-experience" data-test="proof">
       <div class="container main-experience__wrapper">
         <h2 class="main-experience__title">Живой пример</h2>
         <p class="main-experience__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="main-experience__clarifying-benefit-wrapper">
-          <div class="main-experience__wrapper-clarifying">
+        <div class="main-experience__clarifying-wrapper">
+          <div class="main-experience__clarifying-title-wrapper">
             <div class="main-experience__clarifying">
               <p class="main-experience__clarifying-title">5 кг</p>
               <p class="main-experience__clarifying-description">снижение веса</p>
@@ -145,7 +145,10 @@
               <p class="main-experience__clarifying-description">затрачено времени</p>
             </div>
           </div>
-          <p class="main-experience__clarifying-benefit">Затраты на питание: 15 000 РУБ.</p>
+          <div class="main-experience__clarifying-benefit-wrapper">
+            <p class="main-experience__clarifying-benefit">Затраты на питание:</p>
+            <p class="main-experience__clarifying-benefit main-experience__clarifying-price">15 000 РУБ.</p>
+          </div>
         </div>
         <div class="main-experience__slider-description">
           <div class="slider-container">
@@ -176,7 +179,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
@@ -193,11 +196,11 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="container footer-wrapper">
       <a class="footer__logo" href="index.html" aria-current="page">
         <svg class="footer__logo-img" width="128" height="24">
-          <use href="../../icons/stack.svg#footer-logo"></use>
+          <use href="icons/stack.svg#footer-logo"></use>
         </svg>
         <span class="visually-hidden">Логотип сайта Cat Energy</span>
       </a>
@@ -221,7 +224,7 @@
       <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
         HTML Academy
         <svg class="footer__developer-link-img" width="27" height="34">
-          <use href="../../icons/stack.svg#logo-icon-html"></use>
+          <use href="icons/stack.svg#logo-icon-html"></use>
         </svg>
         <span class="visually-hidden">Ссылка на сайт разработчика htmlacademy.ru</span>
       </a>

@@ -1,5 +1,5 @@
 .main-hero {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), image-set("../../images/homepage-cat-background-mobile@1x.jpg" 1x type("image/jpg"), "../../images/homepage-cat-background-mobile@2x.jpg" 2x type("image/jpg")), linear-gradient(to left, rgb(63, 62, 66) 302px, rgb(80, 80, 84) 302px);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 302px, #ffffff 302px), image-set("../images/homepage-cat-background-mobile@1x.jpg" 1x type("image/jpg"), "../images/homepage-cat-background-mobile@2x.jpg" 2x type("image/jpg"), "../images/homepage-cat-background-mobile@1x.webp" 1x type("image/webp"), "../images/homepage-cat-background-mobile@2x.jpg" 2x type("image/webp")), linear-gradient(to left, rgb(63, 62, 66) 302px, rgb(80, 80, 84) 302px);
   background-repeat: no-repeat;
   background-position: center 0;
   font-family: $secondary-font;
@@ -17,15 +17,17 @@
 
     &::before {
       content: "";
-      background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, rgba(0, 0, 0, 0) 50%), image-set("../../images/homepage-cat-background@1x.jpg" 1x type("image/jpg"), "../../images/homepage-cat-background@2x.jpg" 2x type("image/jpg")), linear-gradient(to left, rgb(83, 82, 87) 50%, rgba(0, 0, 0, 0) 50%);
+      background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85) 100%, rgba(0, 0, 0, 0) 50%), image-set("/images/homepage-cat-background-large@1x.jpg" 1x type("image/jpg"), "/images/homepage-cat-background-large@2x.jpg" 2x type("image/jpg"), "/images/homepage-cat-background-large@1x.webp" 1x type("image/webp"), "/images/homepage-cat-background-large@2x.webp" 2x type("image/webp")), linear-gradient(to right, rgb(63, 62, 67) 100%, rgba(0, 0, 0, 0) 50%);
       background-repeat: no-repeat;
-      background-position: 100% 0;
-      width: 100%;
+      background-position: 0;
+      width: 50%;
       height: 694px;
       display: block;
       position: absolute;
       top: 0;
-      z-index: -1;
+      right: 0;
+      z-index: -2;
+      background-size: auto 100%;
     }
   }
 }
@@ -39,10 +41,10 @@
   }
 
   @media (width >= $desktop-width) {
-    grid-template-columns: 324px 798px;
-    grid-template-rows: 270px 72px 157px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     max-width: 1300px;
-    margin-bottom: 163px;
+    margin-bottom: 131px;
   }
 }
 
@@ -67,7 +69,6 @@
     padding-top: 110px;
     padding-left: 80px;
     grid-column: 1 / 1;
-    text-wrap: nowrap;
   }
 }
 
@@ -88,9 +89,10 @@
   }
 
   @media (width >= $desktop-width) {
-    margin-bottom: 29px;
+    margin-bottom: 52px;
     padding-left: 80px;
-    text-wrap: nowrap;
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
   }
 }
 
@@ -112,13 +114,14 @@
 
   @media (width >= $desktop-width) {
     position: static;
-    margin: 0;
-    width: 244px;
-    height: 54px;
-    padding: 14px 26px;
+    width: max-content;
+    margin: 72px 0 0 80px;
+    padding: 14px 27px 14px 28px;
     font-size: 20px;
     line-height: 26px;
     margin-left: 80px;
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
   }
 }
 
@@ -131,5 +134,6 @@
     grid-column: 2 / 3;
     grid-row: 1 / 4;
     padding-top: 29px;
+    margin-left: -384px;
   }
 }

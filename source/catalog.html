@@ -18,7 +18,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="container header-wrapper header-catalog-wrapper">
       <a class="header__logo" href="index.html" aria-current="page">
         <picture>
@@ -51,7 +51,7 @@
   </header>
 
   <main class="catalog-container">
-    <section class="catalog-main">
+    <section class="catalog-main" data-test="catalog">
       <div class="container catalog-main__border-container">
         <h1 class="catalog-main__title">Каталог продукции</h1>
       </div>
@@ -274,11 +274,9 @@
       </ul>
     </section>
 
-    <section class="additional-products">
-      <div class="additional-products__title-wrapper">
-        <h2 class="additional-products__title">Дополнительные&nbsp;товары</h2>
-      </div>
+    <section class="additional-products" data-test="additional">
       <div class="container">
+        <h2 class="additional-products__title">Дополнительные&nbsp;товары</h2>
         <div class="additional-products__wrapper">
           <ul class="additional-products__card-list">
             <li class="additional-products__card-item">
@@ -334,10 +332,8 @@
     </section>
 
     <section class="subscribe">
-      <div class="subscribe__title-wrapper">
-        <h2 class="subscribe__title">Акции&nbsp;и&nbsp;новинки</h2>
-      </div>
       <div class="container">
+        <h2 class="subscribe__title">Акции&nbsp;и&nbsp;новинки</h2>
         <p class="subscribe__description">
           Подпишитесь на наши новости и не пропустите ни одного предложения!
         </p>
@@ -349,7 +345,7 @@
       </div>
     </section>
 
-    <section class="contacts contacts-catalog">
+    <section class="contacts contacts-catalog" data-test="contacts">
       <div class="container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
@@ -361,16 +357,16 @@
         </div>
       </div>
       <div class="contacts__map-picture-wrapper">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d24a9a556d3a1e91e2e58f129a5ee3a0d1791661d0c0d3f06cbb6fa84445857&amp;lang=ru_RU&amp;scroll=true"></script>
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d24a9a556d3a1e91e2e58f129a5ee3a0d1791661d0c0d3f06cbb6fa84445857&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="container footer-wrapper">
       <a class="footer__logo" href="index.html" aria-current="page">
         <svg class="footer__logo-img" width="128" height="24">
-          <use href="../../icons/stack.svg#footer-logo"></use>
+          <use href="icons/stack.svg#footer-logo"></use>
         </svg>
         <span class="visually-hidden">Логотип сайта Cat Energy</span>
       </a>
@@ -394,7 +390,7 @@
       <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
         HTML Academy
         <svg class="footer__developer-link-img" width="27" height="34">
-          <use href="../../icons/stack.svg#logo-icon-html"></use>
+          <use href="icons/stack.svg#logo-icon-html"></use>
         </svg>
         <span class="visually-hidden">Ссылка на сайт разработчика htmlacademy.ru</span>
       </a>

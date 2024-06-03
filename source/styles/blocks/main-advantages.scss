@@ -17,11 +17,11 @@
 
 .main-advantages__wrapper {
   background: #f2f2f2;
-  padding: 24px 33px 18px 20px;
-  margin-bottom: 21px;
+  padding: 24px 20px 20px;
+  margin-bottom: 19px;
 
   @media (width >= $tablet-width) {
-    padding: 77px 63px 57px 52px;
+    padding: 77px 63px 57px 53px;
     margin-bottom: 30px;
 
     &:last-child {
@@ -69,7 +69,7 @@
   @media (width >= $tablet-width) {
     position: absolute;
     right: 0;
-    top: 15px;
+    top: 14px;
 
     &::after {
       width: 200px;
@@ -124,7 +124,7 @@
     height: 28px;
     background-image: url("../../icons/stack.svg#cat-weightgain");
     top: 11px;
-    left: -8px;
+    left: -7px;
   }
 
   @media (width >= $tablet-width) {
@@ -218,7 +218,7 @@
     background-color: #000000;
     display: inline-block;
     width: 32px;
-    height: 12px;
+    height: 14px;
     margin-left: 13px;
     mask-position: right 8px top 0;
     mask-repeat: no-repeat;
@@ -230,7 +230,7 @@
   &:active::after {
     mask-image: url("../../icons/stack.svg#icon-arrow-long");
     width: 32px;
-    height: 12px;
+    height: 14px;
     mask-position: right 0 top 0;
   }
 
@@ -239,8 +239,8 @@
     line-height: 30px;
 
     &::after {
-      margin-left: 22px;
-      margin-bottom: 3px;
+      margin-left: 21px;
+      margin-bottom: 2px;
       mask-position: right 8px top 0;
     }
   }

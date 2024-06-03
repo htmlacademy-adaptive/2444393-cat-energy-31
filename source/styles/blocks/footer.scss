@@ -1,13 +1,13 @@
 .footer {
   background-color: #f2f2f2;
-  padding: 41px 0 40px;
+  padding: 40px 0;
 
   @media (width >= $tablet-width) {
-    padding-top: 58px;
+    padding: 58px 0 56px;
   }
 
   @media (width >= $desktop-width) {
-    padding: 69px 0 66px;
+    padding: 68px 0 66px;
   }
 }
 
@@ -28,6 +28,11 @@
   @media (width >= $tablet-width) {
     padding-bottom: 0;
     border-bottom: none;
+    padding-right: 37px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding-right: 35px;
   }
 }
 
@@ -46,7 +51,7 @@
 
 .footer__social-list {
   list-style-type: none;
-  padding: 19px 0;
+  padding: 20px 0 17px;
   margin: 0 auto;
   display: flex;
   border-bottom: 1px solid #d9d9d9;
@@ -71,7 +76,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 21px;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
