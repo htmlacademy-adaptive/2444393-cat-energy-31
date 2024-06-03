@@ -131,7 +131,6 @@
       opacity: 0.6;
     }
 
-
     &:active {
       opacity: 0.3;
     }
@@ -177,13 +176,6 @@
       height: 2px;
       background-color: $button-color;
       content: "";
-    }
-  }
-
-  @media (width >= $desktop-width) {
-    &::before {
-      background-color: $button-color;
-      bottom: -8px;
     }
   }
 }

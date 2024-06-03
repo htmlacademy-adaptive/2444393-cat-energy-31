@@ -57,6 +57,7 @@
 .header__logo-text {
   margin-left: 56px;
   vertical-align: bottom;
+  margin-top: 2px;
 
   @media (width >= $tablet-width) {
     margin-left: 13px;
@@ -64,6 +65,12 @@
 
   @media (width >= $desktop-width) {
     margin-left: 14px;
+  }
+}
+
+.header__logo-text--catalog {
+  @media (width <= 767px) {
+    margin-top: 5px;
   }
 }
 
