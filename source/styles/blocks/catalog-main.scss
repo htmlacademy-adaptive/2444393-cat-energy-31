@@ -4,7 +4,7 @@
   }
 
   @media (width >= $desktop-width) {
-    margin-bottom: 71px;
+    margin-bottom: 73px;
   }
 }
 
@@ -32,7 +32,7 @@
   }
 
   @media (width >= $desktop-width) {
-    padding: 74px 0 84px;
+    padding: 75px 0 82px;
   }
 }
 
@@ -44,14 +44,14 @@
   @media (width >= $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 61px 60px;
+    gap: 60px;
     padding: 0 30px;
   }
 
   @media (width >= $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 63px 80px;
+    gap: 64px 80px;
     padding: 0 110px;
     max-width: 1440px;
     margin: 0 auto;
@@ -63,10 +63,10 @@
   border-bottom: 1px solid #ebebeb;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 54px 50px 20px 40px;
+  grid-template-rows: 55px 50px 19px 40px;
 
   @media (width >= $tablet-width) {
-    padding: 10px 37px 40px;
+    padding: 11px 37px 40px;
     display: flex;
     flex-direction: column;
     border-bottom: none;
@@ -78,6 +78,7 @@
     min-width: 245px;
     display: flex;
     flex-direction: column;
+    padding: 11px 38px 39px;
   }
 }
 
@@ -101,10 +102,12 @@
 
   @media (width >= $tablet-width) {
     padding: 0 59px 0 58px;
+    margin-bottom: 20px;
   }
 
   @media (width >= $desktop-width) {
     padding: 0 13px;
+    margin-bottom: 22px;
   }
 }
 
@@ -122,11 +125,6 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin-bottom: 13px;
-  }
-
-  @media (width >= $desktop-width) {
-    margin-bottom: 19px;
   }
 }
 
@@ -138,43 +136,43 @@
   grid-column: 2 / 2;
   border-collapse: collapse;
   max-width: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
 
   @media (width >= $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     max-width: 100%;
     border-spacing: 10px;
   }
 
   @media (width >= $desktop-width) {
-    margin-bottom: 39px;
-  }
-}
-
-.catalog-main__card-table-row,
-.catalog-main__card-description,
-.catalog-main__card-value {
-  @media (width >= $tablet-width) {
-    border-bottom: 1px solid #ebebeb;
-  }
-
-  @media (width >= $desktop-width) {
-    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 35px;
+    row-gap: 6px;
   }
 }
 
 .catalog-main__card-description {
   padding: 0;
+  margin: 0;
 
   @media (width >= $tablet-width) {
-    padding: 5px 0 6px;
+    padding: 0 0 3px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (width >= $desktop-width) {
+    margin-bottom: -1px;
+    padding-bottom: 7px;
   }
 }
 
 .catalog-main__card-value {
   text-align: right;
-  padding: 0;
+  padding-right: 1px;
 }
 
 .catalog-main__card-item--more-item {
@@ -207,10 +205,10 @@
   @media (width >= $tablet-width) {
     border: 2px solid #f2f2f2;
     background-image: none;
-    margin-top: 82px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin-top: 81px;
+    padding: 26px 35px;
 
     &::before {
       width: 60px;
@@ -265,7 +263,7 @@
   @media (width >= $tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    padding: 0 10px;
+    padding: 0 16px;
     margin-bottom: 82px;
   }
 

@@ -20,19 +20,21 @@
 
 <body class="page__body">
   <header class="header" data-test="header">
-    <div class="container header-wrapper">
-      <a class="header__logo" href="index.html" aria-current="page">
-        <picture>
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-img-desktop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-img-tablet.svg">
-          <img class="header__logo-img" src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-desktop.svg">
-          <img class="header__logo-text" src="images/logo-text-mobile-tablet.svg" width="101" height="18" alt="Товарный знак Cat Energy">
-        </picture>
-      </a>
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+    <div class="header__mobile-container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html" aria-current="page">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-img-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-img-tablet.svg">
+            <img class="header__logo-img" src="images/logo-img-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-desktop.svg">
+            <img class="header__logo-text" src="images/logo-text-mobile-tablet.svg" width="101" height="18" alt="Товарный знак Cat Energy">
+          </picture>
+        </a>
+      </div>
+      <nav class="main-navigation main-navigation--opened main-navigation__nojs">
         <button class="main-navigation__toggle" type="button" aria-label="Меню">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -66,7 +68,7 @@
             <img class="main-hero__main-picture" loading="eager" src="images/cat-energy-mainpage-mobile@1x.png" srcset="images/cat-energy-mainpage-mobile@2x.png 2x" width="280" height="270" alt="Упаковка продукции Cat Energy">
           </picture>
         </div>
-        <a class="main-hero__button-features button-program" href="#">Подобрать программу</a>
+        <a class="main-hero__button-features button__program" href="#">Подобрать программу</a>
       </div>
     </section>
 

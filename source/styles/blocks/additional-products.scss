@@ -179,6 +179,10 @@
   @media (width >= $tablet-width) {
     text-align: right;
   }
+
+  @media (width >= $desktop-width) {
+    margin-top: -2px;
+  }
 }
 
 .additional-products__card-value {

@@ -198,10 +198,10 @@
   }
 }
 
-.main-navigation--nojs .main-navigation__toggle {
+.main-navigation__nojs .main-navigation__toggle {
   display: none;
 }
 
-.main-navigation--nojs .main-navigation__menu-list {
-  position: static;
+.main-navigation__nojs .main-navigation__menu-list {
+  position: relative;
 }

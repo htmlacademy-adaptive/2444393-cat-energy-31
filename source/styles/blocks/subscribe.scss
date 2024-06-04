@@ -82,7 +82,7 @@
   @media (width >= $tablet-width) {
     padding: 0 38px;
     display: flex;
-    height: 56px;
+    min-height: 56px;
   }
 
   @media (width >= $desktop-width) {
