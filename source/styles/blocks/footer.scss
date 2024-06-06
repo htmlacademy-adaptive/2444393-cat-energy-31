@@ -7,11 +7,11 @@
   }
 
   @media (width >= $desktop-width) {
-    padding: 68px 0 66px;
+    padding: 70px 0 66px;
   }
 }
 
-.footer-wrapper {
+.footer__wrapper {
   @media (width >= $tablet-width) {
     display: flex;
     justify-content: space-between;

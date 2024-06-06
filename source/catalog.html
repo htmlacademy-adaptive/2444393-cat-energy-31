@@ -20,7 +20,7 @@
 <body class="page__body">
   <header class="header" data-test="header">
     <div class="header__mobile-container">
-      <div class="header__wrapper header__catalog-wrapper">
+      <div class="header__wrapper">
         <a class="header__logo" href="index.html" aria-current="page">
           <picture>
             <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-img-desktop.svg">
@@ -33,7 +33,7 @@
           </picture>
         </a>
       </div>
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+      <nav class="main-navigation main-navigation--opened nojs">
         <button class="main-navigation__toggle" type="button" aria-label="Меню">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -305,16 +305,12 @@
       </div>
     </section>
 
-    <section class="contacts contacts-catalog" data-test="contacts">
-      <div class="container">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
-          <p class="contacts__invitation">Приглашаем<br> к сотрудничеству дилеров!</p>
-          <div class="contacts__address-wrapper">
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="contacts__address">Санкт-Петербург</p>
-          </div>
-        </div>
+    <section class="contacts contacts--catalog" data-test="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="contacts__invitation">Приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+        <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8
+          <span class="contacts__city">Санкт-Петербург</span>
+        </address>
       </div>
       <div class="contacts__map-picture-wrapper">
         <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d24a9a556d3a1e91e2e58f129a5ee3a0d1791661d0c0d3f06cbb6fa84445857&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -323,7 +319,7 @@
   </main>
 
   <footer class="footer" data-test="footer">
-    <div class="container footer-wrapper">
+    <div class="container footer__wrapper">
       <a class="footer__logo" href="index.html" aria-current="page">
         <svg class="footer__logo-img" width="128" height="24">
           <use href="icons/stack.svg#footer-logo"></use>

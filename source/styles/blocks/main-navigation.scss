@@ -93,10 +93,10 @@
 
 .main-navigation__menu-item {
   text-align: center;
-  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 
   @media (width >= $tablet-width) {
-    border-top: none;
+    border-bottom: none;
   }
 }
 
